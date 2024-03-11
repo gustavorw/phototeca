@@ -1,23 +1,11 @@
 import axios from "axios";
+import { BASE_URL, API_KEY } from "../constants/env";
 
-
-const client = axios.create({
-    baseURL: "",
+export const client = axios.create({
+    baseURL: BASE_URL,
     headers: {
-        Authorization: ""
+        Authorization: API_KEY
     }
 })
-
-
-const get = async () => {
-    try {
-      const response =  await client.get("")
-      return ""
-    } catch (error) {
-        
-    }
-}
-
-
 
 
